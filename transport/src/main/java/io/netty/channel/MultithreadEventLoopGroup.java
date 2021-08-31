@@ -74,6 +74,7 @@ public abstract class MultithreadEventLoopGroup extends MultithreadEventExecutor
     }
 
     @Override
+    // 循环遍历 下一个执行器
     public EventLoop next() {
         return (EventLoop) super.next();
     }
